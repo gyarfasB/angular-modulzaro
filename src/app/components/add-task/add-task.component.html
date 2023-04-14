@@ -1,0 +1,55 @@
+<form *ngIf="showAddTask" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="text">Óra, előadés neve</label>
+        <input type="text" name="text" [(ngModel)]="text" id="text" placeholder="óra hozzáadása">
+    </div>
+    <div class="form-control">
+        <label for="day">Dátum</label>
+        <input type="text" name="day" [(ngModel)]="day" id="day" placeholder="dátum hozzáadása">
+    </div>
+    <label for="weekday">Nap kiválasztása</label>
+    <div class="form-control radio-inputs">
+        
+        <label class="radio-label">
+            <input type="radio" name="weekday" [(ngModel)]="weekday" id="weekday" value="hétfő">
+            H
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="weekday" [(ngModel)]="weekday" id="weekday" value="kedd">
+            K
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="weekday" [(ngModel)]="weekday" id="weekday" value="szerda">
+            Sz
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="weekday" [(ngModel)]="weekday" id="weekday" value="csütörtök">
+            Cs
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="weekday" [(ngModel)]="weekday" id="weekday" value="péntek">
+            P
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="weekday" [(ngModel)]="weekday" id="weekday" value="szombat">
+            Szo
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="weekday" [(ngModel)]="weekday" id="weekday" value="vasárnap">
+            V
+          </label>
+    </div>
+    <div class="form-control">
+        <label for="time">Időpont</label>
+        <input type="time" name="time" [(ngModel)]="time" id="time">
+    </div>
+    <div class="form-control">
+        <label for="text">Helyszín</label>
+        <input type="text" name="location" [(ngModel)]="locationtext" id="location" placeholder="hely hozzáadása">
+    </div>
+    <div class="form-control form-control-check">
+        <label for="reminder">Emlékeztető beállítása</label>
+        <input type="checkbox" name="reminder" [(ngModel)]="reminder" id="reminder">
+    </div>
+    <input type="submit" value="Mentés" class="btn btn-block">
+</form>

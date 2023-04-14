@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    {
+      "text": "Énekkar",
+      "time": "12:00",
+      "weekday": "kedd",
+      "locationtext": "Kupolaterem",
+      "reminder": false,
+      "id": 1
+    },
+    {
+      "text": "Gitár",
+      "day": "",
+      "time": "15:00",
+      "weekday": "csütörtök",
+      "locationtext": "II.előadó",
+      "reminder": false,
+      "id": 2
+    },
+    {
+      "text": "Művtöri",
+      "day": "2023.03.13",
+      "time": "10:08",
+      "weekday": "hétfő",
+      "locationtext": "We.-018",
+      "reminder": false,
+      "id": 3
+    }
+  ]
+}
