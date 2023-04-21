@@ -11,6 +11,7 @@ export class AddTaskComponent {
 
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
 
+
   text!: string;
   day!: string;
   time!: string;
@@ -19,6 +20,8 @@ export class AddTaskComponent {
   reminder: boolean = false;
   showAddTask!: boolean;
   subscription: Subscription;
+
+  
 
   constructor(private uiService: UiService) {
     this.subscription = this.uiService
@@ -48,5 +51,6 @@ export class AddTaskComponent {
      this.weekday = '';
      this.locationtext = '';
      this.reminder = false;
-  }
+
+  } 
 }

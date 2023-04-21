@@ -1,0 +1,7 @@
+.overflow-area {
+    overflow-x: scroll;
+}
+table,td,tr,thead,tbody {
+    border: 1px solid;
+    border-collapse: collapse;
+}
